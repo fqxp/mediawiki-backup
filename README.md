@@ -1,11 +1,13 @@
 mediawiki-backup
 ================
 
-Mediawiki dumpgenerator (based on [http://code.google.com/p/wikiteam/](wikiteam archiving tools).
+Mediawiki dumpgenerator (based on the [wikiteam archiving tools](http://code.google.com/p/wikiteam)).
 
-Only changes to dumpgenerator.py are `username` and `password` parameters
-for dumping a wiki with HTTP Basic authentication.
+Added `username` and `password` parameters to `dumpgenerator.py`
+for dumping a wiki using HTTP Basic authentication.
 
 For example:
 
-    ./dumpgenerator.py --username=USER --password=PASSWORD --api=http://WIKI.URL/w/api.php --xml
+    ./dumpgenerator.py \
+        --username=USER --password=PASSWORD \
+        --api=http://WIKI.URL/w/api.php --xml
